@@ -27,15 +27,15 @@ def  entertaingeneration(fun):
      user_input = input(f'We have selected {fun} does this work for you? y/n: ')
      return user_input
 def get_user_choice(some_list):
-    user_choice = "n"
-    while user_choice.lower() == "n":
+    user_choice = 'n'
+    while user_choice.lower() == 'n':
             random_selection = generateRandomOption(some_list)
-            user_choice = input(f"We have selected {random_selection}. Do you like this choice? Enter y/n :")
+            user_choice = input(f'We have selected {random_selection} does this work for you? y/n: ')
             if user_choice.lower() == 'n':
-                print("Sorry I guess that wasn't good enough how about now")
+                print('Sorry I guess that wasnt good enough how about now')
                 some_list.remove(random_selection)
             else:
-                print(f"Finally you have chosen  {random_selection}.")
+                print(f'Finally you have chosen {random_selection}.')
     return random_selection
 
 final_destination = get_user_choice (dest)
