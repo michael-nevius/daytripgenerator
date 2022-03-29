@@ -38,13 +38,10 @@ def get_user_choice(some_list):
     return random_selection
 
 final_destination = get_user_choice (dest)
-place_to_eat = foodgeneration(final_destination)
 final_restaurant = get_user_choice (restaraunt)
-modes_of_transportation = transpgeneration(final_destination)
 final_mode_of_transportation = get_user_choice (transport)
-forms_of_entertainment = entertaingeneration(final_destination)
-final_form_of_entertainment = get_user_choice(entertain)
-print(f"""Wait, you finished! It's about time {name} your day trip booking is complete.
+final_form_of_entertainment = get_user_choice (entertain)
+print(f"""Wait, your finished! It's about time {name} your day trip booking is complete.
 You have chosen to travel to {final_destination}.
 You have chosen to dine at {final_restaurant}.
 You have chosen to use a/an {final_mode_of_transportation} to get around.
