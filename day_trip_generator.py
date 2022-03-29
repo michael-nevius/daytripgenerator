@@ -32,7 +32,7 @@ def get_user_choice(some_list):
             user_choice = input(f'We have selected {random_selection} does this work for you? y/n: ')
             if user_choice.lower() == 'n':
                 print('Sorry I guess that wasnt good enough how about now')
-                some_list.remove(random_selection)
+               
             else:
                 print(f'Finally you have chosen {random_selection}.')
     return random_selection
