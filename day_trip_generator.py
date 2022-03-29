@@ -45,9 +45,9 @@ modes_of_transportation = transpgeneration(final_destination)
 final_mode_of_transportation = get_user_choice (transport)
 forms_of_entertainment = entertaingeneration(final_destination)
 final_form_of_entertainment = get_user_choice(entertain)
-print(f"""Congratulations! {name} Your day trip booking is complete.
+print(f"""Wait, you finished! It's about time {name} your day trip booking is complete.
 You have chosen to travel to {final_destination}.
 You have chosen to dine at {final_restaurant}.
 You have chosen to use a/an {final_mode_of_transportation} to get around.
 You have chosen to {final_form_of_entertainment}.
-Have a great time!!""")
+You can finally leave my website!!""")
