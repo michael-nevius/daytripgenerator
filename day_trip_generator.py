@@ -12,20 +12,19 @@ def generateRandomOption(someArray):
 def placegeneration(place):
     place = generateRandomOption(dest)
     user_input = input(f'We have selected {place} does this work for you? y/n: ')
-    while user_input is 'n':
-          print(f'We have selected {place} does this work for you? y/n: ')
+    return user_input   
 def  foodgeneration(food):
-     food = generateRandomOption(restaraunt)
-     user_input = input(f'We have selected {food} does this work for you? y/n: ') 
-     return user_input
+    food = generateRandomOption(restaraunt)
+    user_input = input(f'We have selected {food} does this work for you? y/n: ') 
+    return user_input
 def  transpgeneration(vehicle):
-     vehicle = generateRandomOption(transport)
-     user_input = input(f'We have selected {vehicle} does this work for you? y/n: ')
-     return user_input
+    vehicle = generateRandomOption(transport)
+    user_input = input(f'We have selected {vehicle} does this work for you? y/n: ')
+    return user_input
 def  entertaingeneration(fun):
-     fun = generateRandomOption(entertain)
-     user_input = input(f'We have selected {fun} does this work for you? y/n: ')
-     return user_input
+    fun = generateRandomOption(entertain)
+    user_input = input(f'We have selected {fun} does this work for you? y/n: ')
+    return user_input
 def get_user_choice(some_list):
     user_choice = 'n'
     while user_choice.lower() == 'n':
@@ -39,7 +38,7 @@ def get_user_choice(some_list):
     return random_selection
 
 final_destination = get_user_choice (dest)
-restaraunt = foodgeneration(final_destination)
+place_to_eat = foodgeneration(final_destination)
 final_restaurant = get_user_choice (restaraunt)
 modes_of_transportation = transpgeneration(final_destination)
 final_mode_of_transportation = get_user_choice (transport)
