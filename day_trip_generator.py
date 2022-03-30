@@ -9,22 +9,7 @@ name = input('Please type your first name.: ')
 def generateRandomOption(someArray):
     random_option = random.choice(someArray)
     return random_option
-def placegeneration(place):
-    place = generateRandomOption(dest)
-    user_input = input(f'We have selected {place} does this work for you? y/n: ')
-    return user_input   
-def  foodgeneration(food):
-    food = generateRandomOption(restaraunt)
-    user_input = input(f'We have selected {food} does this work for you? y/n: ') 
-    return user_input
-def  transpgeneration(vehicle):
-    vehicle = generateRandomOption(transport)
-    user_input = input(f'We have selected {vehicle} does this work for you? y/n: ')
-    return user_input
-def  entertaingeneration(fun):
-    fun = generateRandomOption(entertain)
-    user_input = input(f'We have selected {fun} does this work for you? y/n: ')
-    return user_input
+
 def get_user_choice(some_list):
     user_choice = 'n'
     while user_choice.lower() == 'n':
